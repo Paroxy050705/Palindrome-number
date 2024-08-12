@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">
+        Check the entered number is Palindrome or not:--
+    </div>
+    <script>
+        var n,r,s=0;
+        n=Number(prompt("Enter a number:"));
+        document.write("The number is: ",n,"<br>");
+        var x=n;
+        while(n!=0){
+            r=n%10;
+            n=Math.floor(n/10);
+            s=s*10+r;
+        }
+        if(x==s){
+            document.write(`The number ${x} is Palindrome number`);
+        }
+        else{
+            document.write(`The number ${x} is not a Palindrome number`); 
+        }
+    </script>
+</body>
+</html>
